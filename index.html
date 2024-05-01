@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Booking Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body style="margin: 50px 0 50px 0;">
+    <div class="container">
+    <h2 style="font-style: italic; color: #122769; font-weight: bold;">BOOKING SERVICE</h2>
+
+    <h4 class="mt-3" style="font-weight: bold;">FORM BOOKING SERVICE</h4>
+    <div class="row mt-3">
+        <div class="col-2" >
+            <div style="background-color: grey; padding: 10px 0 10px 0; color: #fff; text-align: center;">
+                <h4>icon</h4>
+            </div>
+        </div>
+        <div class="col-10">
+            <div style="background-color: #122769; padding: 10px 0 10px 0; text-align: center; color: #fff;">
+                <h4>Light Repair</h4>
+            </div>
+        </div>
+    </div>
+    <h6 style="margin: 10px 0 30px 0;">Untuk melakukan booking service silahkan isi form di bawah ini, selanjutnya kami akan menghubungi anda.</h6>
+
+    <form action="">
+        <div class="row">
+            <div class="col-6">
+                <label for="nameInput" class="form-label" style="font-weight: bold;">NAMA<span style="color: red; ">*</span> </label>
+                <input type="text" class="form-control" id="nameInput" placeholder="Nama Lengkap">
+            </div>
+            <div class="col-3">
+                <label for="dealerInput" class="form-label" style="font-weight: bold;">PILIH DEALER<span style="color: red;">*</span> </label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>--PILIH DEALER--</option>
+                    <option value="1">Opsi 1</option>
+                    <option value="2">Opsi 2</option>
+                    <option value="3">Opsi 3</option>
+                  </select>
+            </div>
+            <div class="col-3">
+                <label for="motorInput" class="form-label" style="font-weight: bold;">PILIH MOTOR<span style="color: red;">*</span> </label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>--PILIH MOTOR--</option>
+                    <option value="1">Opsi 1</option>
+                    <option value="2">Opsi 2</option>
+                    <option value="3">Opsi 3</option>
+                  </select>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-6">
+                <label for="emailInput" class="form-label" style="font-weight: bold;">EMAIL<span style="color: red;">*</span> </label>
+                <input type="email" class="form-control" id="emailInput" placeholder="Email">
+            </div>
+            <div class="col-6">
+                <label for="platInput" class="form-label" style="font-weight: bold;">Ketik Nomor Polisi(Plat Nomor)</label>
+                <input type="text" class="form-control" id="platInput">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-6">
+                <label for="telponInput" class="form-label" style="font-weight: bold;">TELPON<span style="color: red;">*</span> </label>
+                <input type="text" class="form-control" id="platInput" placeholder="Telpon">
+            </div>
+            <div class="col-3">
+                <label for="tanggalInput" class="form-label" style="font-weight: bold;">TANGGAL<span style="color: red;">*</span> </label>
+                <input type="text" class="form-control" id="tanggalInput" placeholder="2024-03-04">
+            </div>
+            <div class="col-3">
+                <label for="timeInput" class="form-label" style="font-weight: bold;">PILIH JAM<span style="color: red;">*</span> </label>
+                <input type="time" class="form-control" id="timeInput">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-6">
+                <label for="telponselulerInput" class="form-label" style="font-weight: bold;">TELPON SELULAR<span style="color: red;">*</span> </label>
+                <input type="text" class="form-control" id="telponselulerInput" placeholder="Telpon Selular">
+            </div>
+            <div class="col-6" style="padding: 0 12px 0 12px; justify-content: center; ">
+                <div style="background-color: #122769; color: #fff; display: flex; justify-content: center; align-items: center; padding: 15px 0 15px 0; margin-top: 10px;">
+                    <h6>Masa berlaku Booking Service 30 menit dari jam Booking Service.</h6>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-6">
+                <label for="alamatInput" class="form-label" style="font-weight: bold;">ALAMAT<span style="color: red;">*</span> </label>
+                <input type="text" class="form-control" id="alamatInput" placeholder="Alamat">
+            </div>
+            <div class="col-6">
+                <label for="pesanInput" class="form-label" style="font-weight: bold;">PESAN<span style="color: red;">*</span></label>
+                <textarea class="form-control" placeholder="Pesan" id="pesanInput"></textarea>
+            </div>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto mt-3" style="background-color: #122769; padding: 10px; ">
+            <input class="submit" type="submit" style="background-color: transparent; border: none; font-weight: bold; color: #fff; font-size: 20px;" value="Kirim">
+        </div>
+    </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
